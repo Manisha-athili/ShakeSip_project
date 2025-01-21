@@ -61,7 +61,7 @@ body{
     color:var(--main-bg) ;
     text-shadow:1px 1px brown;
     font-size: 3.2rem;
-    font-weight: bold;
+    font-weight: 900;
   }
 .navbar{
     display: flex;
@@ -367,7 +367,7 @@ body{
   .circle-img{
     position: absolute;
     top: -50px;
-    left: 120px; 
+    left: 40%; 
     height: 70px;
     width: 70px;
     border-radius: 100%;
@@ -383,6 +383,7 @@ body{
     min-height: 300px;
     border-radius: 10px;
     margin: 0;
+    position: relative;
   }
   .circle-card:hover .circle-img{
     margin: 0;
@@ -579,7 +580,13 @@ inset: 0% auto auto 0%;
 .cursor p{
 margin: 0px;
 }
+.cursor {
+  opacity: 0; /* Default: hidden */
+  transition: opacity 0.3s; /* Smooth fade-in effect */
+}
 body:has( [data-cursor]:hover ) .cursor{ opacity: 1; }
+
+
 /* styling for icon using positions*/
 .black-menu-child1{
 flex-basis: 33.3%;
@@ -673,7 +680,6 @@ to{top: 2rem};
     margin: 10px auto;
     text-align: center;
   }
-
   .glass-img {
     width: 80%;
     margin: 2px auto;
@@ -1365,6 +1371,9 @@ to{top: 2rem};
     flex-direction: column;
     padding-top: 10rem;
   }
+  .thicksip{
+    font-weight: 700;
+  }
   .section01 .left{
     font-size: 2rem;
   }
@@ -1442,7 +1451,9 @@ to{top: 2rem};
   }
   /* menu cards */
   .sidebar_menu .menu li {
-    padding: 8px !important;
+      font-weight: 700;
+      padding: 1px !important;
+      font-size: 1.4rem;
   }
   .menu-cards .card {
     height: 300px !important;
