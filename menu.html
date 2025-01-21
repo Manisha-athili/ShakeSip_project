@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<style>
+
+.review .review-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+</style>
+</head>
+<body>
+  <section class="review" id="review">
+    <h1 class="heading">reviews <span>what people say</span></h1>
+    <div class="swiper review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box">
+          <i class="fas fa-quote-left"></i>
+          <i class="fas fa-quote-right"></i>
+          <img src="image/pic-1.png" alt="">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>Amazing coffee and a cozy atmosphere! The staff is super friendly, and the pastries are always fresh.</p>
+          <h3>dr robbin</h3>
+          <span>satisfied client</span>
+        </div>
+        <!-- Repeat similar structure for other slides -->
+      </div>
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <script>
+    const swiper = new Swiper('.review-slider', {
+  loop: true,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+});
+
+  </script>
+</body>
+</html>
