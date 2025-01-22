@@ -1352,10 +1352,10 @@ to{top: 2rem};
     width: 280px;
   }
   .circle-img {
-    top: -40px;
+    top: -50%;
   }
   .overlay {
-  left: 6%;
+  left: 10%;
   }
 
   /* section 04  about part */
