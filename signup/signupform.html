@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="signup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
-    <form class="form">
+
+    <form class="form" data-aos="flip-left">
         <p class="title">Register </p>
 
             <div class="flex">
@@ -61,5 +63,11 @@
           <span class="agreement"><a href="#">Learn user licence agreement</a></span>
     
     </form>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>
