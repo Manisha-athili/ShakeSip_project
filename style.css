@@ -343,7 +343,7 @@ body{
     border-radius: 15px;
   } 
   .circle-card:hover .overlay{
-    height: 250px;
+    height: 260px;
     width: 300px;
   }
 .order{
@@ -1377,13 +1377,13 @@ to{top: 2rem};
   .circle-card:hover .overlay {
     height: 200px;
     width: 280px;
+    left: 15%;
   }
   .circle-img {
+    /* top: 0; */
     left:40%
   }
-  .overlay {
-  left: 12%;
-  }
+
 
   /* section 04  about part */
   .heading {
