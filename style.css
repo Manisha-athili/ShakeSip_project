@@ -431,7 +431,7 @@ body{
     color: var(--main-color);
     font-size: 1rem;
     line-height: 1.5;
-    /* padding: 1rem 0; */
+    padding: 0.8rem 0;
   }
   /* styling of read more btn in about us section */
   .readmore{
@@ -1502,6 +1502,23 @@ to{top: 2rem};
       text-align: center;
       row-gap: 80px;
   }
+  
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1450px) {
+  .left-sec01 h1 {
+    font-size: 2.5rem;
+  }
+  .book form {
+    max-height: 60% !important;
+   max-width: 45% !important;
+  }
+  .book form .box {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+  
 }
 
 
